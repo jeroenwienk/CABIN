@@ -57,15 +57,15 @@ ServerEvents.recipes(event => {
     event.remove({ output: "architects_palette:algal_brick" })
     event.smelting("architects_palette:algal_brick", "architects_palette:algal_blend").xp(0).cookingTime(120)
     // Andesite alloy
-    event.remove({ id: "tconstruct:compat/create/andesite_alloy_iron" })
-    event.remove({ id: "create:crafting/materials/andesite_alloy" })
-    event.remove({ id: "create:crafting/materials/andesite_alloy_from_zinc" })
-    event.remove({ id: "create:mixing/andesite_alloy" })
-    event.remove({ id: "create:mixing/andesite_alloy_from_zinc" })
-    event.remove({ id: "thermal:compat/create/smelter_create_alloy_andesite_alloy" })
-    event.remove({ id: "thermal:compat/create/smelter_create_alloy_andesite_alloy" })
-    event.remove({ id: "tconstruct:compat/create/andesite_alloy_zinc" })
-    event.remove({ id: "tconstruct:compat/create/andesite_alloy_iron" })
+    // event.remove({ id: "tconstruct:compat/create/andesite_alloy_iron" })
+    // event.remove({ id: "create:crafting/materials/andesite_alloy" })
+    // event.remove({ id: "create:crafting/materials/andesite_alloy_from_zinc" })
+    // event.remove({ id: "create:mixing/andesite_alloy" })
+    // event.remove({ id: "create:mixing/andesite_alloy_from_zinc" })
+    // event.remove({ id: "thermal:compat/create/smelter_create_alloy_andesite_alloy" })
+    // event.remove({ id: "thermal:compat/create/smelter_create_alloy_andesite_alloy" })
+    // event.remove({ id: "tconstruct:compat/create/andesite_alloy_zinc" })
+    // event.remove({ id: "tconstruct:compat/create/andesite_alloy_iron" })
     event.shaped(Item.of("create:andesite_alloy", 2), [
         "SS",
         "AA"

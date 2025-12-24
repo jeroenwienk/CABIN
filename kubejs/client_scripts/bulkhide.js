@@ -1,5 +1,5 @@
 JEIEvents.hideItems(event => {
-    event.hide(/^sophisticatedstorage:limited.+barrel.+$/)
+    // event.hide(/^sophisticatedstorage:limited.+barrel.+$/)
     event.hide("sophisticatedstorage:copper_barrel")
     event.hide("sophisticatedstorage:copper_chest")
     event.hide("sophisticatedstorage:copper_shulker_box")
@@ -199,7 +199,7 @@ JEIEvents.hideItems(event => {
 })
 
 JEIEvents.hideFluids(event => {
-    event.hide("tconstruct:molten_tin")
+    // event.hide("tconstruct:molten_tin")
     event.hide("ad_astra:cryo_fuel")
     event.hide("kubejs:crude_oil")
 })

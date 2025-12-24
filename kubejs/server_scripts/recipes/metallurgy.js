@@ -3,11 +3,11 @@
 
 // Redstone, silver and tin do not exist in A&B and we need a bit of scripting to remove them
 ServerEvents.recipes(event => {
-    event.remove({ output: "#forge:nuggets/tin" })
-    event.remove({ output: "#forge:ingots/tin" })
-    event.remove({ output: "#forge:storage_blocks/tin" })
-    event.remove({ output: "#forge:plates/tin" })
-    event.remove({ output: "#forge:gears/tin" })
+    // event.remove({ output: "#forge:nuggets/tin" })
+    // event.remove({ output: "#forge:ingots/tin" })
+    // event.remove({ output: "#forge:storage_blocks/tin" })
+    // event.remove({ output: "#forge:plates/tin" })
+    // event.remove({ output: "#forge:gears/tin" })
 
     // metal replacements
     const replacementFilter = [{ mod:"thermal", type:"minecraft:crafting_shaped"}, { mod:"thermal", type:"minecraft:crafting_shapeless"}, { mod:"exchangers", type:"minecraft:crafting_shaped"}]
@@ -385,6 +385,7 @@ ServerEvents.recipes(event => {
     dust_process("copper", "minecraft:gold_nugget", "gold")
     dust_process("zinc", "thermal:sulfur", "lead")
     dust_process("osmium", "mekanism:nugget_osmium", "nickel")
+    dust_process("tin", "mekanism:nugget_tin", "nickel")
 
 
     event.remove([

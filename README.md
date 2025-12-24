@@ -31,3 +31,6 @@ Thank you!
 
 ## Contributing
 CABIN uses Panpack template, so refer to [here](https://github.com/ThePansmith/PanPack) for setup.
+
+
+& "C:\Users\Jeroen\AppData\Roaming\PrismLauncher\java\java-runtime-gamma\bin\java.exe" -jar pakku.jar add complementary-reimagined
