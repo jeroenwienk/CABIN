@@ -12,21 +12,6 @@
 		[types.wood_type.architects_palette]
 			twisted = true
 
-		[types.wood_type.biomesoplenty]
-			fir = true
-			pine = true
-			maple = true
-			redwood = true
-			mahogany = true
-			jacaranda = true
-			palm = true
-			willow = true
-			dead = true
-			magic = true
-			umbran = true
-			hellbark = true
-			empyreal = true
-
 		[types.wood_type.thermal]
 			rubberwood = true
 
@@ -41,30 +26,13 @@
 			strophar = true
 			glacian = true
 
-	[types.leaves_type]
+		[types.wood_type.ars_nouveau]
+			archwood = true
 
-		[types.leaves_type.biomesoplenty]
-			origin = true
-			flowering_oak = true
-			red_maple = true
-			orange_maple = true
-			yellow_maple = true
-			rainbow_birch = true
-			snowblossom = true
-			null = true
-			cypress = true
-			fir = true
-			pine = true
-			redwood = true
-			mahogany = true
-			jacaranda = true
-			palm = true
-			willow = true
-			dead = true
-			magic = true
-			umbran = true
-			hellbark = true
-			empyreal = true
+		[types.wood_type.createdieselgenerators]
+			chip_wood = true
+
+	[types.leaves_type]
 
 		[types.leaves_type.architects_palette]
 			twisted = true
@@ -90,6 +58,21 @@
 
 		[types.leaves_type.ad_astra]
 			glacian = true
+
+		[types.leaves_type.ars_nouveau]
+			blue_archwood = true
+			red_archwood = true
+			purple_archwood = true
+			green_archwood = true
+
+		[types.leaves_type.ars_elemental]
+			yellow_archwood = true
+
+	[types.cake]
+
+		[types.cake.createaddition]
+			chocolate_cake = true
+			honey_cake = true
 
 #Disables specific entries
 [entries]

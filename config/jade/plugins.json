@@ -51,13 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "mbd2": {
-    "recipe_logic_provider": true,
-    "multiblock_provider": true
-  },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -68,18 +61,6 @@
     "goggles.detailed": false,
     "placard": true
   },
-  "jadeaddons.lootr": {
-    "info": true
-  },
-  "reliquary": {
-    "pedestal": true,
-    "altar": true,
-    "mortar": true,
-    "cauldron": true
-  },
-  "supplementaries": {
-    "hat_stand": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -88,8 +69,8 @@
     "registry_name": "OFF",
     "mod_name": true
   },
-  "gravestone": {
-    "grave": true
+  "functionalstorage": {
+    "armory": true
   },
   "balm": {
     "jade": true
@@ -105,5 +86,33 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "mbd2": {
+    "recipe_logic_provider": true,
+    "multiblock_provider": true
+  },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
+  },
+  "reliquary": {
+    "pedestal": true,
+    "altar": true,
+    "mortar": true,
+    "cauldron": true
+  },
+  "supplementaries": {
+    "hat_stand": true
+  },
+  "waystones": {
+    "waystone": true
+  },
+  "gravestone": {
+    "grave": true
   }
 }

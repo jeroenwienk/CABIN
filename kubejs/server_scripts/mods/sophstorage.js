@@ -9,8 +9,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: "sophisticatedbackpacks:xp_pump_upgrade" })
 
     // Remove Limited barrels
-    event.remove({ id: /^sophisticatedstorage:.*limited.+barrel.+$/ })
-    event.remove({ output: /^sophisticatedstorage:limited_barrel.+$/ })
+    // event.remove({ id: /^sophisticatedstorage:.*limited.+barrel.+$/ })
+    // event.remove({ output: /^sophisticatedstorage:limited_barrel.+$/ })
 
     // Remove Copper tier storage (not used)
     event.remove({ output: "sophisticatedstorage:copper_barrel" })
