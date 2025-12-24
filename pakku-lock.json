@@ -1362,6 +1362,45 @@
             ]
         },
         {
+            "pakku_id": "bhe1vU0rd8iOxI2D",
+            "type": "SHADER",
+            "slug": {
+                "curseforge": "complementary-reimagined"
+            },
+            "name": {
+                "curseforge": "Complementary Shaders - Reimagined"
+            },
+            "id": {
+                "curseforge": "627557"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ComplementaryReimagined_r5.6.1.zip",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7090/226/ComplementaryReimagined_r5.6.1.zip",
+                    "id": "7090226",
+                    "parent_id": "627557",
+                    "hashes": {
+                        "sha1": "7fa0a31aa9375ad63e4b13cb1de8d4a9702dd74e",
+                        "md5": "04c822b2da584e21745869190ac653e6"
+                    },
+                    "required_dependencies": [],
+                    "size": 500696,
+                    "date_published": "2025-10-10T11:43:44.227Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "gMcmpYF45CJizkCZ",
             "type": "MOD",
             "slug": {
@@ -1890,6 +1929,47 @@
                     ],
                     "size": 638421,
                     "date_published": "2025-11-02T21:13:33.313Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "UOAShVQUXGZzZHY7",
+            "pakku_links": [
+                "nZtIV6KPn2VyIebl"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-ore-excavation"
+            },
+            "name": {
+                "curseforge": "Create Ore Excavation"
+            },
+            "id": {
+                "curseforge": "649832"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createoreexcavation-1.20-1.6.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7152/704/createoreexcavation-1.20-1.6.5.jar",
+                    "id": "7152704",
+                    "parent_id": "649832",
+                    "hashes": {
+                        "sha1": "ef135e6124a7c8bb04a6cf8ef3d3680de4f44425",
+                        "md5": "4965ad729b2a26b484d3c95da3996ea1"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 432699,
+                    "date_published": "2025-10-26T16:06:26.073Z"
                 }
             ]
         },
@@ -5403,6 +5483,169 @@
                     "required_dependencies": [],
                     "size": 1480444,
                     "date_published": "2025-07-27T22:36:16.117Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "M3Hwduu46E6QUw3R",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mekanism"
+            },
+            "name": {
+                "curseforge": "Mekanism"
+            },
+            "id": {
+                "curseforge": "268560"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Mekanism-1.20.1-10.4.16.80.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6552/911/Mekanism-1.20.1-10.4.16.80.jar",
+                    "id": "6552911",
+                    "parent_id": "268560",
+                    "hashes": {
+                        "sha1": "b7f12ae710888b01746507a0aa8cb375f5897158",
+                        "md5": "3791fb5cf1e8b6f583d3a00d5115d1ee"
+                    },
+                    "required_dependencies": [],
+                    "size": 12558456,
+                    "date_published": "2025-05-21T13:09:30.523Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "JX1uPjdW6pMkbIwF",
+            "pakku_links": [
+                "M3Hwduu46E6QUw3R"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mekanism-additions"
+            },
+            "name": {
+                "curseforge": "Mekanism Additions"
+            },
+            "id": {
+                "curseforge": "345425"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MekanismAdditions-1.20.1-10.4.16.80.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6552/913/MekanismAdditions-1.20.1-10.4.16.80.jar",
+                    "id": "6552913",
+                    "parent_id": "345425",
+                    "hashes": {
+                        "sha1": "64e930adf31b23db53412a62b0e8f950e64f7f2d",
+                        "md5": "af32e56e97b39d670c9b6cd0bbced4b7"
+                    },
+                    "required_dependencies": [
+                        "268560"
+                    ],
+                    "size": 1136805,
+                    "date_published": "2025-05-21T13:09:31.973Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "3IlJHDBvYMCRrDie",
+            "pakku_links": [
+                "M3Hwduu46E6QUw3R"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mekanism-generators"
+            },
+            "name": {
+                "curseforge": "Mekanism Generators"
+            },
+            "id": {
+                "curseforge": "268566"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MekanismGenerators-1.20.1-10.4.16.80.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6552/914/MekanismGenerators-1.20.1-10.4.16.80.jar",
+                    "id": "6552914",
+                    "parent_id": "268566",
+                    "hashes": {
+                        "sha1": "53fa707fd204ca1dd099a08995c2197145ff9a36",
+                        "md5": "5ecedb27379b4543b28c0860f9c2fbf4"
+                    },
+                    "required_dependencies": [
+                        "268560"
+                    ],
+                    "size": 1054586,
+                    "date_published": "2025-05-21T13:09:32.597Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "8DkbgGHOfdEqBUfF",
+            "pakku_links": [
+                "M3Hwduu46E6QUw3R"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mekanism-tools"
+            },
+            "name": {
+                "curseforge": "Mekanism Tools"
+            },
+            "id": {
+                "curseforge": "268567"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MekanismTools-1.20.1-10.4.16.80.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6552/915/MekanismTools-1.20.1-10.4.16.80.jar",
+                    "id": "6552915",
+                    "parent_id": "268567",
+                    "hashes": {
+                        "sha1": "0d22b1cc01a33702f1b9e17b26cc55e233a4e7ff",
+                        "md5": "5fbc84c81cff26ba2d49c8ac7647f9e4"
+                    },
+                    "required_dependencies": [
+                        "268560"
+                    ],
+                    "size": 517999,
+                    "date_published": "2025-05-21T13:09:33Z"
                 }
             ]
         },

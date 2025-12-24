@@ -384,6 +384,7 @@ ServerEvents.recipes(event => {
     dust_process("gold", "thermal:cinnabar", "zinc")
     dust_process("copper", "minecraft:gold_nugget", "gold")
     dust_process("zinc", "thermal:sulfur", "lead")
+    dust_process("osmium", "mekanism:nugget_osmium", "nickel")
 
 
     event.remove([
