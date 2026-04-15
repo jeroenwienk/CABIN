@@ -256,6 +256,9 @@ ServerEvents.recipes(event => {
     // other metal unification
     event.replaceOutput({}, "#forge:ingots/silver", "thermal:silver_ingot")
     event.replaceOutput({}, "#forge:ingots/bronze", "thermal:bronze_ingot")
+    event.replaceOutput({}, "#forge:ingots/lead", "thermal:lead_ingot")
+    event.replaceOutput({}, "#forge:nuggets/lead", "thermal:lead_nugget")
+    event.replaceOutput({}, "#forge:storage_blocks/lead", "thermal:lead_block")
     event.replaceOutput({ id:"occultism:crafting/silver_block"}, "#forge:storage_blocks/silver", "thermal:silver_block")
 
     // Ore processing
