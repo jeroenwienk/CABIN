@@ -96,6 +96,8 @@ ServerEvents.blockLootTables(event => {
     event.addJson("thermal:deepslate_nickel_ore", metal_ores_drop_dust("thermal:deepslate_nickel_ore", "create:crushed_raw_nickel", "thermal:nickel_dust"))
     event.addJson("thermal:lead_ore", metal_ores_drop_dust("thermal:lead_ore", "create:crushed_raw_lead", "thermal:lead_dust"))
     event.addJson("thermal:deepslate_lead_ore", metal_ores_drop_dust("thermal:deepslate_lead_ore", "create:crushed_raw_lead", "thermal:lead_dust"))
+    event.addJson("mekanism:lead_ore", metal_ores_drop_dust("mekanism:lead_ore", "create:crushed_raw_lead", "thermal:lead_dust"))
+    event.addJson("mekanism:deepslate_lead_ore", metal_ores_drop_dust("mekanism:deepslate_lead_ore", "create:crushed_raw_lead", "thermal:lead_dust"))
     event.addJson("mekanism:osmium_ore", metal_ores_drop_dust("mekanism:osmium_ore", "create:crushed_raw_osmium", "mekanism:dust_osmium"))
     event.addJson("mekanism:deepslate_osmium_ore", metal_ores_drop_dust("mekanism:deepslate_osmium_ore", "create:crushed_raw_osmium", "mekanism:dust_osmium"))
     event.addJson("mekanism:tin_ore", metal_ores_drop_dust("mekanism:tin_ore", "create:crushed_raw_tin", "mekanism:dust_tin"))
