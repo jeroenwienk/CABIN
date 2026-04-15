@@ -5,8 +5,8 @@
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -94,8 +94,14 @@
   "ars_nouveau": {
     "mob_jar": true
   },
+  "create_mobile_packages": {
+    "bee_port": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
   },
   "mekanism": {
     "infuse_type": true,
@@ -106,9 +112,6 @@
     "slurry": true,
     "energy": true,
     "tooltip_renderer": true
-  },
-  "jadeaddons.lootr": {
-    "info": true
   },
   "reliquary": {
     "pedestal": true,
