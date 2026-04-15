@@ -1,5 +1,15 @@
 {
   "bookGuiScale": 0,
   "clickedVisualize": false,
-  "bookData": {}
+  "bookData": {
+    "ars_nouveau:worn_notebook": {
+      "viewedEntries": [
+        "ars_nouveau:getting_started/elemental_tweaks",
+        "ars_nouveau:getting_started/spell_casting",
+        "ars_nouveau:getting_started/spell_mana"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }

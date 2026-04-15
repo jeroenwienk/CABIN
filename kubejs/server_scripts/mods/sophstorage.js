@@ -87,10 +87,10 @@ ServerEvents.recipes(event => {
         })
     })
 
-    enderiumMachine(event, Item.of("sophisticatedstorage:controller", 1), "minecraft:emerald")
-    enderiumMachine(event, Item.of("sophisticatedstorage:storage_link", 1), "thermal:lead_ingot")
-    leadMachine(event, Item.of("sophisticatedstorage:storage_input", 1))
-    leadMachine(event, Item.of("sophisticatedstorage:storage_output", 1))
+    andesiteMachine(event, Item.of("sophisticatedstorage:controller", 1), "minecraft:emerald")
+    andesiteMachine(event, Item.of("sophisticatedstorage:storage_link", 1), "thermal:lead_ingot")
+    andesiteMachine(event, Item.of("sophisticatedstorage:storage_input", 1))
+    andesiteMachine(event, Item.of("sophisticatedstorage:storage_output", 1))
 
     // Stack upgrades
     let stackupgrade = [

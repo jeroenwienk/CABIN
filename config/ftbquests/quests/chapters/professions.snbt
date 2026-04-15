@@ -69,11 +69,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 30L
-				icon: "kubejs:silver_coin"
-				id: "121ECE09FBC2490A"
-				item: "thermal:silver_coin"
-				type: "item"
+				id: "3170F91035648AE4"
+				type: "checkmark"
 			}]
 			title: "{cabin.quest.1E26046FA8177616.title}"
 			x: -6.0d
