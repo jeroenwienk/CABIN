@@ -128,10 +128,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: "sophisticatedbackpacks:stack_upgrade_omega_tier"})
     event.remove({ output: "sophisticatedstorage:stack_upgrade_omega_tier" })
 
-    // Upgrades
-    event.remove({ id: "sophisticatedstorage:hopper_upgrade" })
-    event.remove({ id: "sophisticatedstorage:advanced_hopper_upgrade" })
-
     // Remove Magnet upgrades
     event.remove({ id: "sophisticatedbackpacks:magnet_upgrade" })
     event.remove({ id: "sophisticatedbackpacks:advanced_magnet_upgrade" })
