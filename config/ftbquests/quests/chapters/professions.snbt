@@ -36,7 +36,7 @@
 						}
 						{
 							level: 1
-							name: "tconstruct:experienced"
+							name: "tconstruct:shock"
 						}
 						{
 							level: 1
@@ -103,7 +103,7 @@
 						}
 						{
 							level: 1
-							name: "tconstruct:experienced"
+							name: "tconstruct:shock"
 						}
 						{
 							level: 1
@@ -147,11 +147,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 30L
-				icon: "kubejs:silver_coin"
-				id: "40D5C78A3738FC5E"
-				item: "thermal:silver_coin"
-				type: "item"
+				id: "3C0BE88D8C31A719"
+				type: "checkmark"
 			}]
 			title: "{cabin.quest.12B37E99B1D3837E.title}"
 			x: -8.0d
@@ -184,7 +181,7 @@
 						}
 						{
 							level: 1
-							name: "tconstruct:experienced"
+							name: "tconstruct:shock"
 						}
 						{
 							level: 1
@@ -217,11 +214,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 30L
-				icon: "kubejs:silver_coin"
-				id: "1D8BF49B36108A4D"
-				item: "thermal:silver_coin"
-				type: "item"
+				id: "62A37BAF6E898378"
+				type: "checkmark"
 			}]
 			title: "{cabin.quest.3A48FDC224D029BF.title}"
 			x: -7.0d
@@ -247,11 +241,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 30L
-				icon: "kubejs:silver_coin"
-				id: "7DB85322979AEF65"
-				item: "thermal:silver_coin"
-				type: "item"
+				id: "6EBBBBAFF921A3A2"
+				type: "checkmark"
 			}]
 			title: "{cabin.quest.66DA9BE9277FABF1.title}"
 			x: -2.0d
@@ -277,7 +268,7 @@
 					tic_modifiers: [
 						{
 							level: 1
-							name: "tconstruct:experienced"
+							name: "tconstruct:shock"
 						}
 						{
 							level: 1
@@ -307,7 +298,7 @@
 						"tconstruct:attack_speed": 0.75f
 						"tconstruct:durability": 1871.5f
 						"tconstruct:harvest_tier": "minecraft:diamond"
-						"tconstruct:mining_speed": 3.45f
+						"tconstruct:mining_speed": 3.3349998f
 					}
 					tic_volatile_data: {
 						abilities: 1
@@ -323,11 +314,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 30L
-				icon: "kubejs:silver_coin"
-				id: "30824E76C57A8679"
-				item: "thermal:silver_coin"
-				type: "item"
+				id: "72572C5DCB963F95"
+				type: "checkmark"
 			}]
 			title: "{cabin.quest.683AA93BE7DEA512.title}"
 			x: 0.0d
@@ -375,6 +363,7 @@
 					tic_stats: {
 						"tconstruct:attack_damage": 5.25f
 						"tconstruct:attack_speed": 1.6f
+						"tconstruct:block_amount": 10.0f
 						"tconstruct:durability": 794.2f
 						"tconstruct:harvest_tier": "minecraft:diamond"
 						"tconstruct:mining_speed": 3.7375f
@@ -393,11 +382,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 30L
-				icon: "kubejs:silver_coin"
-				id: "3F3272C9BFC25003"
-				item: "thermal:silver_coin"
-				type: "item"
+				id: "08369677D65BAF17"
+				type: "checkmark"
 			}]
 			title: "{cabin.quest.66DDDE912A191E57.title}"
 			x: -5.0d
@@ -505,11 +491,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 30L
-				icon: "kubejs:silver_coin"
-				id: "79BD40CF4A57DA36"
-				item: "thermal:silver_coin"
-				type: "item"
+				id: "0EE7A91E4E344B68"
+				type: "checkmark"
 			}]
 			title: "{cabin.quest.6C0EC278451434AC.title}"
 			x: -1.0d
@@ -560,11 +543,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 30L
-				icon: "kubejs:silver_coin"
-				id: "042431BBCD1966C4"
-				item: "thermal:silver_coin"
-				type: "item"
+				id: "2F3263C17386DEF8"
+				type: "checkmark"
 			}]
 			title: "{cabin.quest.32C46B11BDAD7632.title}"
 			x: 1.0d

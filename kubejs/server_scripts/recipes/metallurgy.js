@@ -14,6 +14,18 @@ ServerEvents.recipes(event => {
     event.replaceInput(replacementFilter, "#forge:ingots/tin", "#forge:ingots/zinc")
     event.replaceInput(replacementFilter, "#forge:gears/tin", "#forge:gears/lead")
 
+    // Thermal still ships a few direct tin self-conversion/storage recipes.
+    // After the blanket tin -> zinc replacement above, those recipes become nonsense
+    // like zinc ingot -> tin nuggets. Remove the stray tin handcrafting recipes and
+    // keep the intended replacement only for other Thermal machine/block recipes.
+    event.remove([
+        { id: "thermal:storage/tin_block" },
+        { id: "thermal:storage/tin_ingot_from_block" },
+        { id: "thermal:storage/tin_ingot_from_nuggets" },
+        { id: "thermal:storage/tin_nugget_from_ingot" },
+        { id: "thermal:parts/tin_gear" }
+    ])
+
     event.replaceInput(replacementFilter, "#forge:plates/bronze", "#forge:plates/nickel")
     event.replaceInput(replacementFilter, "#forge:gears/bronze", "#forge:gears/nickel")
 
@@ -310,6 +322,16 @@ ServerEvents.recipes(event => {
         let nugget = getPreferredItemFromTag("forge:nuggets/" + materialName);
         let nuggetByproduct = getPreferredItemFromTag("forge:nuggets/" + ByproductName);
         let dust = getPreferredItemFromTag("forge:dusts/" + materialName);
+
+        event.remove([
+            { type: "minecraft:smelting", input: dustTag },
+            { type: "minecraft:blasting", input: dustTag },
+            { type: "tconstruct:melting", input: dustTag },
+            { id: `mekanism:processing/${materialName}/ingot/from_dust_smelting` },
+            { id: `mekanism:processing/${materialName}/ingot/from_dust_blasting` },
+            { id: `thermal:smelting/${materialName}_ingot_from_dust_smelting` },
+            { id: `thermal:smelting/${materialName}_ingot_from_dust_blasting` }
+        ])
 
         // raw ore block compression and decompression
         event.replaceInput({type: "minecraft:crafting_shaped"}, rawOreTag, crushedOre)
