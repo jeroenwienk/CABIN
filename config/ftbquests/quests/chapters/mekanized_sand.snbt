@@ -1,0 +1,195 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanized_sand"
+	group: "3BE4B4DE6A6F6C40"
+	icon: "mekanism:crusher"
+	id: "7C1A91D3E24B8F60"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5799D55BB26BA52C"]
+			description: [
+				"Mekanism can provide a compact powered alternative to the early sand loop."
+				""
+				"This does not replace the chapter one route. It gives you a side path for automating sand once you are ready to bring basic power into the workshop."
+			]
+			hide_until_deps_complete: true
+			icon: "mekanism:crusher"
+			id: "1A8B60F4C732D19E"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "43E7320D6BA1905F"
+				type: "checkmark"
+			}]
+			title: "Mekanized Sand"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A8B60F4C732D19E"]
+			description: ["Start with a Heat Generator or Solar Generator. Either one is enough to power a small sand line."]
+			icon: "mekanismgenerators:heat_generator"
+			id: "6E2C03D9A14B78F5"
+			subtitle: "Any Basic Generator"
+			tasks: [{
+				icon: "mekanismgenerators:heat_generator"
+				id: "5F7AC1D6E908342B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanismgenerators:heat_generator"
+							}
+							{
+								Count: 1b
+								id: "mekanismgenerators:solar_generator"
+							}
+						]
+					}
+				}
+				title: "Any Basic Generator"
+				type: "item"
+			}]
+			title: "Feed the Heat"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E2C03D9A14B78F5"]
+			description: ["Universal Cables move Forge Energy between Mekanism machines. A short run is enough for this setup."]
+			icon: "mekanism:basic_universal_cable"
+			id: "5A09D4C87E2F61B3"
+			tasks: [{
+				count: 8L
+				id: "14B806E3C75A29DF"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			title: "Move the Spark"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E2C03D9A14B78F5"]
+			description: [
+				"The Metallurgic Infuser is Mekanism's first crafting machine. It uses an infused material such as redstone or carbon to make machine components."
+				""
+				"This route only needs the basics, so do not worry about the deeper Mekanism processing chains yet."
+			]
+			icon: "mekanism:metallurgic_infuser"
+			id: "4D907E18A2B65C3F"
+			subtitle: "Powered Crafting"
+			tasks: [{
+				id: "68C1DF350E4B972A"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			title: "Infusion Basics"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D907E18A2B65C3F"]
+			description: ["Infused alloy and basic control circuits are the small electronic parts needed for Mekanism machines."]
+			icon: "mekanism:basic_control_circuit"
+			id: "31E9D07A4C85B6F2"
+			tasks: [
+				{
+					id: "2C3D4E5F60718293"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+				{
+					id: "5364758697A8B9C0"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Basic Circuitry"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"31E9D07A4C85B6F2"
+				"5A09D4C87E2F61B3"
+			]
+			description: ["The Crusher is the important part of this detour. It can turn cobblestone into gravel, and gravel into sand."]
+			icon: "mekanism:crusher"
+			id: "0B74EA92D63F18C5"
+			shape: "square"
+			tasks: [{
+				id: "6A1B2C3D4E5F7081"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			title: "Crusher"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B74EA92D63F18C5"]
+			description: ["Crush cobblestone into gravel first. This is the middle step between stone and sand."]
+			icon: "minecraft:gravel"
+			id: "74B0C6D1E39A25F8"
+			tasks: [{
+				count: 16L
+				id: "19A2B3C4D5E6F708"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			title: "Crush Cobble"
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["74B0C6D1E39A25F8"]
+			description: [
+				"Run the gravel through the Crusher one more time to produce sand."
+				""
+				"Feed it from a cobblestone generator or a stockpile of stone, then send the sand back into your clay and algal brick production."
+			]
+			icon: "minecraft:sand"
+			id: "2F8D1A73C5E946B0"
+			rewards: [
+				{
+					count: 8
+					id: "41C52D63E74F809A"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "52D63E74F809A1B2"
+					item: "architects_palette:algal_blend"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					count: 64L
+					id: "6F809A1B2C3D4E5F"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "7081A2B3C4D5E6F7"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Sand on Demand"
+			x: 1.5d
+			y: 8.0d
+		}
+	]
+	title: "&b Mekanized Sand"
+}

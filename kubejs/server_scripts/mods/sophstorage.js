@@ -16,6 +16,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: "sophisticatedstorage:copper_barrel" })
     event.remove({ output: "sophisticatedstorage:copper_chest" })
     event.remove({ output: "sophisticatedstorage:copper_shulker_box" })
+    event.remove({ output: /^sophisticatedstorage:limited_copper_barrel_\d$/ })
     // Remove Copper tier upgrades
     event.remove({ output: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
     event.remove({ input: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
@@ -31,6 +32,10 @@ ServerEvents.recipes(event => {
     ]
     const sophStorageTypes = [
         ["", "barrel"],
+        ["limited_", "barrel_1"],
+        ["limited_", "barrel_2"],
+        ["limited_", "barrel_3"],
+        ["limited_", "barrel_4"],
         ["", "chest"],
         ["", "shulker_box"]
     ]
