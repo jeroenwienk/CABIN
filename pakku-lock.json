@@ -2644,6 +2644,49 @@
             ]
         },
         {
+            "pakku_id": "76nHqJQ9EmGwDYmg",
+            "pakku_links": [
+                "nZtIV6KPn2VyIebl",
+                "JaVV6sF7o1XthGEG"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "power-grid"
+            },
+            "name": {
+                "curseforge": "Create: Power Grid"
+            },
+            "id": {
+                "curseforge": "1321420"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "powergrid-mc1.20.1-0.5.5.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7999/913/powergrid-mc1.20.1-0.5.5.1.jar",
+                    "id": "7999913",
+                    "parent_id": "1321420",
+                    "hashes": {
+                        "sha1": "492bedeb60d73de0df65d6bd20fe2c9bf0111348",
+                        "md5": "00fc79c1690bd1c54a2305d2f480865d"
+                    },
+                    "required_dependencies": [
+                        "328085",
+                        "419699"
+                    ],
+                    "size": 6209133,
+                    "date_published": "2026-04-27T11:46:39.483Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "BBI2jU2KNJRqiFQY",
             "pakku_links": [
                 "nZtIV6KPn2VyIebl"
@@ -4009,6 +4052,45 @@
                     "required_dependencies": [],
                     "size": 441356,
                     "date_published": "2025-09-20T20:01:18.167Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "DIl9qGxWlqXWy6QC",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "fast-better-grass"
+            },
+            "name": {
+                "curseforge": "Fast Better Grass"
+            },
+            "id": {
+                "curseforge": "819030"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Fast Better Grass.zip",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7800/807/Fast Better Grass.zip",
+                    "id": "7800807",
+                    "parent_id": "819030",
+                    "hashes": {
+                        "sha1": "d5a8cd9fba8a7987e5ddfef11e89e27d76bab77c",
+                        "md5": "cdc5ecceda843db1ea21355b84a39692"
+                    },
+                    "required_dependencies": [],
+                    "size": 10928,
+                    "date_published": "2026-03-23T17:46:03.880Z"
                 }
             ]
         },

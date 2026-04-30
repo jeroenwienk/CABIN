@@ -136,6 +136,7 @@ ServerEvents.recipes(event => {
     andesiteMachine(event, Item.of("create:mechanical_plough", 2))
     andesiteMachine(event, Item.of("create:contraption_controls", 1))
     andesiteMachine(event, Item.of("thermal:device_tree_extractor", 1), "minecraft:bucket")
+    andesiteMachine(event, Item.of("thermal:device_rock_gen", 1), "minecraft:piston")
     andesiteMachine(event, Item.of("ae2:meteorite_compass", 1), "minecraft:compass")
     andesiteMachine(event, Item.of("ae2:charger", 1), "ae2:certus_quartz_crystal")
     andesiteMachine(event, Item.of("thermal:dynamo_stirling", 1), "thermal:rf_coil")
@@ -497,7 +498,6 @@ ServerEvents.recipes(event => {
     // Zinc Machines
     donutCraft(event, "kubejs:zinc_machine", "kubejs:zinc_casing", "kubejs:infernal_mechanism")
     // Machine Crafting
-    zincMachine(event, Item.of("thermal:device_rock_gen", 1), "minecraft:piston")
     zincMachine(event, Item.of("thermal:device_collector", 1), "minecraft:ender_pearl")
     zincMachine(event, Item.of("thermal:device_nullifier", 1), "minecraft:lava_bucket")
     zincMachine(event, Item.of("thermal:device_potion_diffuser", 1), "minecraft:glass_bottle")

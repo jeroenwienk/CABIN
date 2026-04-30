@@ -1,0 +1,741 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau"
+	group: "3BE4B4DE6A6F6C40"
+	icon: "ars_nouveau:novice_spell_book"
+	id: "17158E98DD114116"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Ars Nouveau can be played as a spellcasting mod, but in CABIN it is most useful when treated as another automation layer."
+				""
+				"This page follows the usual Ars progression first, then branches into the addons installed here: Ars Elemental, Ars Technica, Ars Creo, and Ars Energistique."
+				""
+				"You do not need to complete every branch immediately. Build the source network first, then pick the automation tools that solve a real factory problem."
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "0F8DEC23AAC72D5D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2CDBF23511816875"
+				type: "checkmark"
+			}]
+			title: "Arcane Engineering"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"The Worn Notebook is the in-game manual. Keep it nearby; Ars has many small rules around Source, pedestals, rituals, and summons."
+				""
+				"If a recipe on this page feels underspecified, check its Notebook entry and JEI page before changing your build."
+			]
+			icon: "ars_nouveau:worn_notebook"
+			id: "5EB6946060E985F3"
+			tasks: [{
+				id: "769FB369A142E913"
+				item: "ars_nouveau:worn_notebook"
+				type: "item"
+			}]
+			title: "Read the Notebook"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Archwood is the first material bottleneck. Trees spawn in the world, and an Archwood Forest biome is the most comfortable place to stock up."
+				""
+				"Bring saplings home once you find them. Later rituals and source loops both appreciate a renewable Archwood supply."
+			]
+			icon: "ars_nouveau:green_archwood_log"
+			id: "62AED3239518CCAD"
+			tasks: [{
+				icon: "ars_nouveau:green_archwood_log"
+				id: "2F550266D7F4D4DE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:blue_archwood_log"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:green_archwood_log"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:purple_archwood_log"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:red_archwood_log"
+							}
+						]
+					}
+				}
+				title: "Any Archwood Log"
+				type: "item"
+			}]
+			title: "Archwood Samples"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62AED3239518CCAD"]
+			description: [
+				"The Novice Spell Book is your first caster. Start with practical spells: Projectile + Break, Touch + Light, Self + Leap, and Touch + Interact."
+				""
+				"These are not just combat toys. Early Ars spells are excellent utility tools while your Create factory is still small."
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "58FBE1D126FA33E2"
+			shape: "square"
+			tasks: [{
+				id: "097220262DD9DD94"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			title: "First Spell Book"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["58FBE1D126FA33E2"]
+			description: [
+				"Use the Scribe's Table to add glyphs to your spell book and to inscribe spell parchment for turrets, Reactive gear, and other automation."
+				""
+				"Treat this as your spell workbench. Put it somewhere you can reach often."
+			]
+			icon: "ars_nouveau:scribes_table"
+			id: "5A7717EA328C04BA"
+			tasks: [{
+				id: "188A0DC690CFF859"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			title: "Scribe's Table"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Unlock a few workhorse glyphs before chasing damage. Break handles mining, Light handles building, and Craft is surprisingly useful once inventories start to pile up."
+				""
+				"Good early spell examples: Projectile + Break, Touch + Light, Self + Launch + Slowfall, and Touch + Craft."
+			]
+			icon: "ars_nouveau:glyph_break"
+			id: "70A5A2E11D182F13"
+			tasks: [
+				{
+					id: "456692B7605EE8DE"
+					item: "ars_nouveau:glyph_break"
+					type: "item"
+				}
+				{
+					id: "1B938056892CEC0A"
+					item: "ars_nouveau:glyph_light"
+					type: "item"
+				}
+				{
+					id: "1B8462D87B4ED881"
+					item: "ars_nouveau:glyph_craft"
+					type: "item"
+				}
+			]
+			title: "Practical Glyphs"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["70A5A2E11D182F13"]
+			description: [
+				"The Imbuement Chamber starts the material side of Ars. Its most important early job is turning amethyst or lapis into Source Gems."
+				""
+				"Place Source Jars nearby later to speed recipes that need Source."
+			]
+			icon: "ars_nouveau:imbuement_chamber"
+			id: "7BE53A3DD7B8DAB6"
+			tasks: [{
+				id: "6FF70305D540BDAF"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			title: "Imbuement Chamber"
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7BE53A3DD7B8DAB6"]
+			description: [
+				"Source Gems are the basic circuit boards of Ars Nouveau. Make a batch before moving on; almost every machine, glyph, and addon recipe asks for them."
+				""
+				"A small amethyst or lapis supply is enough to get started."
+			]
+			icon: "ars_nouveau:source_gem"
+			id: "0CA0FED52D7186F5"
+			tasks: [{
+				count: 8L
+				id: "7E79ABE1ABFEA3B7"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "Gem Reserve"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Source Jars are the batteries for Ars. Most machines and rituals do not consume FE; they look for Source in nearby jars."
+				""
+				"Keep at least one jar by the Imbuement Chamber and another near your Enchanting Apparatus once that is built."
+			]
+			icon: "ars_nouveau:source_jar"
+			id: "4257F0D6D8DA7619"
+			tasks: [{
+				id: "0F1F95462675DDF9"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			title: "Source Storage"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4257F0D6D8DA7619"]
+			description: [
+				"Sourcelinks generate Source. Pick one that matches an existing resource loop instead of building a new one from scratch."
+				""
+				"Volcanic likes burnable fuel, Agronomic likes crop and tree growth, Mycelial likes food, Vitalic likes breeding and mob deaths, and Alchemical likes potions."
+			]
+			icon: "ars_nouveau:agronomic_sourcelink"
+			id: "1C54D7689D3CE63E"
+			tasks: [{
+				icon: "ars_nouveau:agronomic_sourcelink"
+				id: "75D2902A2CB7F662"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:volcanic_sourcelink"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:agronomic_sourcelink"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:mycelial_sourcelink"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:vitalic_sourcelink"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:alchemical_sourcelink"
+							}
+						]
+					}
+				}
+				title: "Any Sourcelink"
+				type: "item"
+			}]
+			title: "Generate Source"
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"The Dominion Wand configures Source Relays, Starbuncles, Whirlisprigs, Wixies, and several other Ars blocks."
+				""
+				"Use the wand on the source first, then on the destination. Sneak-use to clear or switch strict-side behavior."
+			]
+			icon: "ars_nouveau:dominion_wand"
+			id: "5B9988ECF28CD3F4"
+			tasks: [
+				{
+					id: "7EC8D97149817D1E"
+					item: "ars_nouveau:dominion_wand"
+					type: "item"
+				}
+				{
+					id: "5FF73CA3172A21DD"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+			]
+			title: "Route the Flow"
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"The Enchanting Apparatus is the main progression gate. It crafts spell book upgrades, Magebloom Seeds, charms, curios, and several addon machines."
+				""
+				"Build it with an Arcane Core underneath and up to eight Arcane Pedestals within three blocks."
+			]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "4A30969D066DB85C"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "070413963A03FD10"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "6F64101EF4E98C66"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "47C603C19BFBE6ED"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+			]
+			title: "Apparatus Crafting"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Magebloom Seeds come from the Enchanting Apparatus and unlock Magebloom Fiber."
+				""
+				"Automate this like any other crop once possible. Fiber becomes armor, thread, book upgrades, and a lot of utility recipes."
+			]
+			icon: "ars_nouveau:magebloom"
+			id: "5D13F9B87BD4D6A3"
+			tasks: [
+				{
+					id: "50006719E5D4054B"
+					item: "ars_nouveau:magebloom"
+					type: "item"
+				}
+				{
+					id: "377906A873137036"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+			]
+			title: "Magebloom Crop"
+			x: -2.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"The Apprentice Spell Book opens the middle of Ars. This is where spells become strong enough to replace several hand tools and small machines."
+				""
+				"Useful mid-tier goals: Extract, Place Block, Harvest, Grow, Exchange, Fortune, and Ender Inventory."
+			]
+			icon: "ars_nouveau:apprentice_spell_book"
+			id: "1B2B6AC133C8B030"
+			tasks: [{
+				id: "296C8014F6C45F81"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			title: "Mage's Spell Book"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1B2B6AC133C8B030"]
+			description: [
+				"Spell Parchments let machines cast for you. A Basic Spell Turret can place, break, harvest, ignite, or trigger effects depending on the spell you inscribe."
+				""
+				"Ars Creo also lets turrets and Source Jars behave on Create contraptions, which turns spells into mobile factory tools."
+			]
+			icon: "ars_nouveau:basic_spell_turret"
+			id: "1B4FD91CE73F6667"
+			tasks: [
+				{
+					id: "5F6937D69F6C62F6"
+					item: "ars_nouveau:spell_parchment"
+					type: "item"
+				}
+				{
+					id: "1CE141D62666EF33"
+					item: "ars_nouveau:basic_spell_turret"
+					type: "item"
+				}
+			]
+			title: "Spells as Machines"
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Rituals are area machines. Some run once, while others keep working as long as they can pull Source from nearby jars."
+				""
+				"Harvest and Overgrowth are the obvious factory starters. Sanctuary, Warping, Containment, Scrying, and Flight are worth reading about before you need them."
+			]
+			icon: "ars_nouveau:ritual_brazier"
+			id: "61F9609F1746781F"
+			tasks: [
+				{
+					id: "06F2C063B0303AB0"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+				{
+					id: "40FA178102D1783B"
+					item: "ars_nouveau:ritual_harvest"
+					type: "item"
+				}
+				{
+					id: "3FB87A94CFE0BA17"
+					item: "ars_nouveau:ritual_overgrowth"
+					type: "item"
+				}
+			]
+			title: "Ritual Worksite"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Starbuncles are tiny item logistics workers. Use the Dominion Wand to bind inventories and item movement paths."
+				""
+				"They are not a replacement for belts everywhere, but they are excellent around compact Ars setups, potion rooms, and awkward machine corners."
+			]
+			icon: "ars_nouveau:starbuncle_charm"
+			id: "38EBF22EE4FAF8F1"
+			tasks: [{
+				id: "3B236B1C6BCC594A"
+				item: "ars_nouveau:starbuncle_charm"
+				type: "item"
+			}]
+			title: "Starbuncle Logistics"
+			x: -4.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Whirlisprigs generate natural drops from the area around their home. Their output depends on nearby block variety and Source supply."
+				""
+				"Use them for renewable oddities: flowers, saplings, crops, and other nature materials that are annoying to belt-farm directly."
+			]
+			icon: "ars_nouveau:whirlisprig_charm"
+			id: "52BC52EE665D0D50"
+			tasks: [{
+				id: "70AC2F98663C3165"
+				item: "ars_nouveau:whirlisprig_charm"
+				type: "item"
+			}]
+			title: "Whirlisprig Garden"
+			x: -2.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Wixies can craft items and brew potions using nearby inventories, Potion Jars, and Source."
+				""
+				"Start simple: bind a few ingredient chests, set one recipe on the cauldron, and add redstone control before expanding."
+			]
+			icon: "ars_nouveau:wixie_charm"
+			id: "600DFBAA36454F6E"
+			tasks: [
+				{
+					id: "45359258915E7075"
+					item: "ars_nouveau:wixie_charm"
+					type: "item"
+				}
+				{
+					id: "6942E8D8A2195434"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+			]
+			title: "Wixie Workshop"
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Drygmys produce drops from nearby entities without killing them. The usual clean setup is mobs in Containment Jars around a Drygmy Henge."
+				""
+				"Use this for rare drops that would otherwise demand a loud mob farm."
+			]
+			icon: "ars_nouveau:drygmy_charm"
+			id: "2EDCA7FA0D379448"
+			tasks: [
+				{
+					id: "49AD2649D4EF91A6"
+					item: "ars_nouveau:drygmy_charm"
+					type: "item"
+				}
+				{
+					id: "6AF7D027594B4406"
+					item: "ars_nouveau:mob_jar"
+					type: "item"
+				}
+			]
+			title: "Drygmy Drops"
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Bookwyrms expand the Storage Lectern system and can also be bound as a familiar."
+				""
+				"CABIN already has several strong storage options, so treat this as a compact magical storage room or as flavor for an Ars workshop."
+			]
+			icon: "ars_nouveau:bookwyrm_charm"
+			id: "590358D97D3F2FAD"
+			tasks: [
+				{
+					id: "24A0414D43469ED6"
+					item: "ars_nouveau:bookwyrm_charm"
+					type: "item"
+				}
+				{
+					id: "7EDDF32ED4FED138"
+					item: "ars_nouveau:storage_lectern"
+					type: "item"
+				}
+			]
+			title: "Bookwyrm Storage"
+			x: 0.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["1B2B6AC133C8B030"]
+			description: [
+				"Ars Elemental adds focused spell identities. Pick one lesser focus first, then build toward prisms and stronger elemental tools."
+				""
+				"Fire, water, air, and earth all change what your spell book is good at. This is where the mod becomes a build, not just a toolkit."
+			]
+			icon: "ars_elemental:lesser_fire_focus"
+			id: "6D89B265106923EF"
+			tasks: [
+				{
+					icon: "ars_elemental:lesser_fire_focus"
+					id: "0658509B74AAC2B4"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_elemental:lesser_fire_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:lesser_water_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:lesser_air_focus"
+								}
+								{
+									Count: 1b
+									id: "ars_elemental:lesser_earth_focus"
+								}
+							]
+						}
+					}
+					title: "Any Lesser Focus"
+					type: "item"
+				}
+				{
+					id: "30A2AD453B12A464"
+					item: "ars_elemental:advanced_prism"
+					type: "item"
+				}
+			]
+			title: "Elemental Specialization"
+			x: -3.0d
+			y: 24.0d
+		}
+		{
+			description: [
+				"Ars Technica ties Source into Create. The Calibrated Precision Mechanism is made in the Enchanting Apparatus from a Precision Mechanism, amethyst, Source Gems, and Source."
+				""
+				"Once you craft the Source Motor, you can turn Source into rotational force. This is the cleanest direct bridge between magic infrastructure and Create stress."
+			]
+			icon: "ars_technica:source_engine"
+			id: "4A5D5DFA8021A999"
+			tasks: [
+				{
+					id: "456ED7B1B9C97F92"
+					item: "ars_technica:calibrated_precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "6772C6025CA902C7"
+					item: "ars_technica:source_engine"
+					type: "item"
+				}
+			]
+			title: "Source Motor"
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["4A5D5DFA8021A999"]
+			description: [
+				"Ars Technica also adds Create-flavored glyphs. Press, Polish, Fuse, Whirl, Superheat, and Obliterate let spells imitate workshop processing."
+				""
+				"Use these when a compact spell setup is better than a full belt line, or when a turret needs to process items in place."
+			]
+			icon: "ars_technica:runic_spanner"
+			id: "5A35D2DE3948FFA8"
+			tasks: [
+				{
+					id: "35ED303D2C16D369"
+					item: "ars_technica:runic_spanner"
+					type: "item"
+				}
+				{
+					id: "4DC0843E5A650252"
+					item: "ars_technica:transmutation_focus"
+					type: "item"
+				}
+				{
+					id: "222EC3715B606B04"
+					item: "ars_technica:glyph_press"
+					type: "item"
+				}
+			]
+			title: "Technomancy Tools"
+			x: 3.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"38EBF22EE4FAF8F1"
+				"4A5D5DFA8021A999"
+			]
+			description: [
+				"Ars Creo adds the Starbuncle Wheel, a simple way to generate rotational force for Create."
+				""
+				"Place a gold block in front of the wheel to increase RPM. It is a good thematic starter for a magical workshop before the larger Source Motor setup takes over."
+			]
+			icon: "ars_creo:starbuncle_wheel"
+			id: "34D79FB31CD070E8"
+			tasks: [{
+				id: "2C2683668A20313F"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
+			}]
+			title: "Starbuncle Wheel"
+			x: -2.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["4257F0D6D8DA7619"]
+			description: [
+				"Ars Energistique connects Source to AE2. The Source Converter can power an ME network from Source, and ME Source Cells store Source inside the network."
+				""
+				"This branch matters once AE2 is online. Before that, ordinary Source Jars and relays are easier to reason about."
+			]
+			icon: "arseng:source_acceptor"
+			id: "698AA5B5EC150FB0"
+			tasks: [
+				{
+					id: "55CE95881537AF4F"
+					item: "arseng:source_acceptor"
+					type: "item"
+				}
+				{
+					id: "621AF2F942AEE880"
+					item: "arseng:me_source_jar"
+					type: "item"
+				}
+				{
+					id: "2DD1F48F58EB9DB7"
+					item: "arseng:source_storage_cell_1k"
+					type: "item"
+				}
+			]
+			title: "ME Source Network"
+			x: 2.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["1B2B6AC133C8B030"]
+			description: [
+				"The Archmage Spell Book and Wilden progression are the late-game spell goals. Prepare strong armor, good mobility, and enough Source before summoning the Wilden Chimera."
+				""
+				"Ars Elemental's Mark of Mastery is a good parallel endpoint for a spell-focused character."
+			]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "126F34CA0FAD8835"
+			tasks: [
+				{
+					id: "2C0F2AC26BB297C6"
+					item: "ars_nouveau:archmage_spell_book"
+					type: "item"
+				}
+				{
+					id: "7A347F5EF14C3B9B"
+					item: "ars_nouveau:wilden_tribute"
+					type: "item"
+				}
+				{
+					id: "488CF58F843F3A66"
+					item: "ars_elemental:mark_of_mastery"
+					type: "item"
+				}
+			]
+			title: "Archmage Goals"
+			x: 0.0d
+			y: 28.0d
+		}
+		{
+			dependencies: [
+				"4A5D5DFA8021A999"
+				"698AA5B5EC150FB0"
+			]
+			description: [
+				"At this point Ars is integrated instead of isolated."
+				""
+				"A mature setup should have Source generation, Source storage, one or two summon workers, an Apparatus area, a ritual station, and at least one cross-mod bridge into Create or AE2."
+				""
+				"Do not overbuild every subsystem. The strongest Ars factory is usually a few focused magical tools attached to the Create and AE2 lines you already trust."
+			]
+			icon: "ars_nouveau:source_gem_block"
+			id: "0B2677F76AA9F036"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					count: 16
+					id: "796A12F748AAF225"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "20E242962F9CD317"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "5022878DFF9751E1"
+				title: "Arcane Factory Running"
+				type: "checkmark"
+			}]
+			title: "Arcane Factory"
+			x: 0.0d
+			y: 31.0d
+		}
+	]
+	title: "&5 Arcane Engineering"
+}

@@ -6,7 +6,7 @@ const ResourceOverridesManager = Java.loadClass("fuzs.resourcepackoverrides.clie
 // Uses the 3 numbers from the semantic version. 5.3.2 would have 5 as the major version, 3 as the minor version, 2 as the patch version.
 const MAJOR_VERSION = 2;
 const MINOR_VERSION = 0;
-const PATCH_VERSION = 0;
+const PATCH_VERSION = 1;
 
 const RESOURCE_VERSION = (MAJOR_VERSION << 16) + (MINOR_VERSION << 8) + PATCH_VERSION;
 const FILE_NAME = "kubejs_client_data.json";
