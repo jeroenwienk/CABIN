@@ -23,6 +23,10 @@ JEIEvents.hideItems(event => {
 
     event.hide("tconstruct:steel_ingot")
     event.hide("tconstruct:steel_nugget")
+    event.hide("tconstruct:steel_block")
+    event.hide("ad_astra:steel_ingot")
+    event.hide("ad_astra:steel_nugget")
+    event.hide("ad_astra:steel_block")
     event.hide("occultism:silver_ingot")
     event.hide("occultism:silver_ingot")
     event.hide("thermal:copper_nugget")

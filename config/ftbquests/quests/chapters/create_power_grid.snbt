@@ -1,0 +1,372 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_power_grid"
+	group: "3BE4B4DE6A6F6C40"
+	icon: "powergrid:generator_induction_rotor"
+	id: "211F42B0D867AE53"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5799D55BB26BA52C"]
+			description: [
+				"Create: Power Grid is not just RF cable with Create textures. It simulates voltage, current, resistance, losses, and heat."
+				""
+				"The important early rule is simple: current needs a complete loop. Most confusion comes from wiring only one side of a device, overdrawing a tiny source, or letting voltage swing too high."
+				""
+				"This line aims at a practical end point: turning Create rotation into Forge Energy for Mekanism machines with a Device Connector."
+			]
+			hide_until_deps_complete: true
+			icon: "powergrid:generator_induction_rotor"
+			id: "06EBCDEED2DEB74D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "50EEB3C3EB2E1407"
+				type: "checkmark"
+			}]
+			title: "Create: Power Grid"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06EBCDEED2DEB74D"]
+			description: [
+				"Start with the mod's Ponders before building anything expensive. The most relevant ones are Wire Connector, Voltage Gauge, Generator Clutch, Generator Rotor, Shunt Generator, and Device Connector."
+				""
+				"Treat those scenes as the visual manual, then use these quests as the survival checklist."
+			]
+			icon: "powergrid:electrical_gizmo"
+			id: "4E000177494B51B2"
+			tasks: [{
+				id: "3C52B449F72E258F"
+				title: "Review the key Ponders"
+				type: "checkmark"
+			}]
+			title: "Study the Grid"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["06EBCDEED2DEB74D"]
+			description: [
+				"Conductive Casing is the root material for most Power Grid blocks. In this pack it starts from an Andesite Casing and a zinc ingot."
+				""
+				"Make several now. Generators, gauges, resistors, and FE connectors all pull from this part family."
+			]
+			icon: "powergrid:conductive_casing"
+			id: "419B54727B1A7D34"
+			tasks: [{
+				count: 4L
+				id: "37742DE011FB43BF"
+				item: "powergrid:conductive_casing"
+				type: "item"
+			}]
+			title: "Conductive Casings"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["419B54727B1A7D34"]
+			description: [
+				"Wire Connectors are attachment points; Copper Wire makes the run between terminals; Wire Cutters clean up mistakes."
+				""
+				"Keep early wires short. Every wire has resistance, so longer runs lose voltage as heat and can burn if you pull too much current."
+			]
+			icon: "powergrid:wire_connector"
+			id: "56DABEDF7401EC3F"
+			tasks: [
+				{
+					count: 8L
+					id: "0E73D71436075863"
+					item: "powergrid:wire_connector"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1F3E3A18D5CF2F74"
+					item: "powergrid:wire"
+					type: "item"
+				}
+				{
+					id: "1C61FB52C3F31BE6"
+					item: "powergrid:wire_cutter"
+					type: "item"
+				}
+			]
+			title: "Wire Kit"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Build one harmless test circuit before touching generators. Put a small source and a light in the same closed loop, with a return path back to the source."
+				""
+				"If the bulb is dark, check for an open circuit or insufficient voltage. If something overheats, you are drawing too much current for that part."
+			]
+			icon: "powergrid:lv_light_bulb"
+			id: "7328D3C2D9245661"
+			tasks: [
+				{
+					id: "714BB3E82D98F331"
+					item: "powergrid:potato_battery"
+					type: "item"
+				}
+				{
+					id: "6CD84A8B4E58DF6B"
+					item: "powergrid:light_fixture"
+					type: "item"
+				}
+				{
+					id: "1DFD629E3622C6D7"
+					item: "powergrid:lv_light_bulb"
+					type: "item"
+				}
+			]
+			title: "First Closed Loop"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Gauges make Power Grid much easier to reason about. Use Voltage Gauges across two terminals, Current Gauges in series with a circuit, and Power Gauges to watch draw into a section of the network."
+				""
+				"Right-click the top of a gauge to change its range. Engineer's Goggles show more detailed readouts."
+			]
+			icon: "powergrid:voltage_gauge"
+			id: "73E09533FAABC183"
+			tasks: [
+				{
+					id: "40A415D74F1BF41D"
+					item: "powergrid:voltage_gauge"
+					type: "item"
+				}
+				{
+					id: "6B8625DE9C83C768"
+					item: "powergrid:current_gauge"
+					type: "item"
+				}
+				{
+					id: "4C1B429229E5F8E2"
+					item: "powergrid:power_gauge"
+					type: "item"
+				}
+			]
+			title: "Measure Everything"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["73E09533FAABC183"]
+			description: [
+				"Resistors are your safety valves. A Power Resistor limits current, a Rheostat lets Create rotation vary resistance, and a Fuse Holder can protect a branch when current exceeds its setting."
+				""
+				"Use this kit while tuning a generator. It is cheaper to burn a fuse than to pop the load you were trying to power."
+			]
+			icon: "powergrid:power_resistor"
+			id: "2F195E8394E1BF22"
+			tasks: [
+				{
+					id: "4EA3D7FF4B12FFA7"
+					item: "powergrid:power_resistor"
+					type: "item"
+				}
+				{
+					id: "06141985425AAC3D"
+					item: "powergrid:rheostat"
+					type: "item"
+				}
+				{
+					id: "0BD26F04E0F3B45A"
+					item: "powergrid:fuse_holder"
+					type: "item"
+				}
+			]
+			title: "Current Control"
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["73E09533FAABC183"]
+			description: [
+				"The generator turns Create rotation into electricity. The clutch couples your kinetic network to the generator shaft, rotors produce electricity when spinning in a magnetic field, and commutators provide the generator terminals."
+				""
+				"Make extra Copper Coils; they are consumed while creating generator windings."
+			]
+			icon: "powergrid:generator_clutch"
+			id: "4DE094DCD88E1C78"
+			tasks: [
+				{
+					id: "0F0FF30E7370E1DC"
+					item: "powergrid:generator_clutch"
+					type: "item"
+				}
+				{
+					id: "13E88358DF8B3715"
+					item: "powergrid:generator_induction_rotor"
+					type: "item"
+				}
+				{
+					id: "6613D2FCE526E020"
+					item: "powergrid:generator_commutator"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5B0DC9CA6B4CCB9E"
+					item: "powergrid:copper_coil"
+					type: "item"
+				}
+				{
+					id: "1E18B210CD05D70D"
+					item: "powergrid:generator_housing"
+					type: "item"
+				}
+			]
+			title: "Generator Parts"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"2F195E8394E1BF22"
+				"4DE094DCD88E1C78"
+			]
+			description: [
+				"Right-click two shafts with a Copper Coil to create a winding. Windings around the rotor provide the magnetic field; adjacent windings can connect in series."
+				""
+				"Keep the first build small. The default config caps rotor assemblies at 8 blocks, and a small generator is easier to tune safely."
+			]
+			icon: "powergrid:copper_coil"
+			id: "6030354EA9045463"
+			tasks: [{
+				id: "6CFB5BEAC30668CD"
+				title: "Create generator windings"
+				type: "checkmark"
+			}]
+			title: "Wind the Field"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"The first practical generator is a shunt generator. It is self-excited, produces a mostly steady voltage once wired correctly, and can start from the residual magnetic field in the windings."
+				""
+				"Put adjustable resistance in series with the field windings. Lower resistance increases field current and voltage; higher resistance lowers it. Watch a Voltage Gauge while tuning."
+			]
+			icon: "powergrid:rheostat"
+			id: "63F35AEE9852F86D"
+			shape: "square"
+			tasks: [{
+				id: "6559713013D58C17"
+				title: "Build and tune a shunt generator"
+				type: "checkmark"
+			}]
+			title: "Shunt Generator"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["63F35AEE9852F86D"]
+			description: [
+				"The Battery stores electricity and changes behavior as it discharges. Use it as a buffer while you test real machines, not as a replacement for enough generation."
+				""
+				"A buffer gives short spikes somewhere to go, but sustained Mekanism loads still need enough generator power."
+			]
+			icon: "powergrid:battery"
+			id: "5664E5E262521DFE"
+			tasks: [{
+				id: "40DACEEEBC0E8FDA"
+				item: "powergrid:battery"
+				type: "item"
+			}]
+			title: "Grid Buffer"
+			x: -2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["63F35AEE9852F86D"]
+			description: [
+				"Long wires lose power as heat. For distance, transmit at higher voltage and lower current, then step back down near the load."
+				""
+				"Grounding Rods provide a 0V reference, but they are not a magic return wire. Bad grounding conditions can electrify the area around the rod."
+			]
+			icon: "powergrid:transformer_core"
+			id: "452C27666F7AD48F"
+			tasks: [
+				{
+					id: "1663D09D909C2F84"
+					item: "powergrid:transformer_core"
+					type: "item"
+				}
+				{
+					id: "455357C254912AEE"
+					item: "powergrid:heavy_wire_connector"
+					type: "item"
+				}
+				{
+					id: "1BC46F17BFC70DF0"
+					item: "powergrid:grounding_rod"
+					type: "item"
+				}
+			]
+			title: "Transmission Tools"
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["63F35AEE9852F86D"]
+			description: [
+				"The Device Connector is the bridge to Forge Energy. Place it so its output face points into a block that can receive FE, such as a Mekanism cable or machine, then wire its electrical terminals into your Power Grid loop."
+				""
+				"In this world, the default conversion is 2 FE/t of buffer and transfer rate per volt, while the electrical cost is based on 10 FE per watt. More voltage raises the possible FE/t, but the generator still has to supply the watts."
+			]
+			icon: "powergrid:device_connector"
+			id: "160D0503EE704DC1"
+			tasks: [{
+				id: "526A6E086B6CDE7E"
+				item: "powergrid:device_connector"
+				type: "item"
+			}]
+			title: "Forge Energy Bridge"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["160D0503EE704DC1"]
+			description: [
+				"Now connect the Device Connector into Mekanism. A short Universal Cable run is a good first target because it lets you branch into several machines later."
+				""
+				"If the Mekanism machine flickers or drains faster than it fills, watch the Voltage and Power Gauges. Add generator capacity or reduce field resistance until the voltage stays stable under load."
+			]
+			icon: "mekanism:basic_universal_cable"
+			id: "11A9282F1229B11C"
+			rewards: [{
+				count: 16
+				id: "1680F382C21D25CF"
+				item: "powergrid:wire"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					count: 8L
+					id: "53D1B4264C07223E"
+					item: "mekanism:basic_universal_cable"
+					type: "item"
+				}
+				{
+					id: "4CEC9673117B921D"
+					title: "Power a Mekanism machine from Power Grid"
+					type: "checkmark"
+				}
+			]
+			title: "Power Mekanism"
+			x: 0.0d
+			y: 18.0d
+		}
+	]
+	title: "&e Create: Power Grid"
+}

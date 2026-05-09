@@ -213,6 +213,11 @@ ServerEvents.tags("item", event => {
 })
 
 ServerEvents.tags("block", event => {
+    event.removeAllTagsFrom("tconstruct:steel_block")
+    event.removeAllTagsFrom("ad_astra:steel_block")
+    event.add("forge:storage_blocks/steel", "mekanism:block_steel")
+    event.add("ad_astra:steel_blocks", "mekanism:block_steel")
+    event.add("c:steel_blocks", "mekanism:block_steel")
 
     // Create Deco laser lamps
     let decoLampColours = ["yellow", "red", "green", "blue"]
@@ -298,6 +303,19 @@ ServerEvents.tags("block", event => {
 ServerEvents.tags("item", event => {
     event.removeAllTagsFrom("tconstruct:steel_ingot")
     event.removeAllTagsFrom("tconstruct:steel_nugget")
+    event.removeAllTagsFrom("tconstruct:steel_block")
+    event.removeAllTagsFrom("ad_astra:steel_ingot")
+    event.removeAllTagsFrom("ad_astra:steel_nugget")
+    event.removeAllTagsFrom("ad_astra:steel_block")
+    event.add("forge:ingots/steel", "mekanism:ingot_steel")
+    event.add("forge:nuggets/steel", "mekanism:nugget_steel")
+    event.add("forge:storage_blocks/steel", "mekanism:block_steel")
+    event.add("ad_astra:steel_ingots", "mekanism:ingot_steel")
+    event.add("ad_astra:steel_nuggets", "mekanism:nugget_steel")
+    event.add("ad_astra:steel_blocks", "mekanism:block_steel")
+    event.add("c:steel_ingots", "mekanism:ingot_steel")
+    event.add("c:steel_nuggets", "mekanism:nugget_steel")
+    event.add("c:steel_blocks", "mekanism:block_steel")
     event.removeAllTagsFrom("occultism:silver_dust")
     event.removeAllTagsFrom("occultism:silver_ingot")
     event.removeAllTagsFrom("occultism:silver_nugget")

@@ -436,6 +436,10 @@ const addOregenOverworld = function(event, featureName, blockName, heightType, h
  */
 // const ItemOutput = Java.loadClass('slimeknights.mantle.recipe.helper.ItemOutput');
 const getPreferredItemFromTag = (tag) => {
+    if (tag === "forge:ingots/steel") return "mekanism:ingot_steel";
+    if (tag === "forge:nuggets/steel") return "mekanism:nugget_steel";
+    if (tag === "forge:storage_blocks/steel") return "mekanism:block_steel";
+
     /* Tried using mantle for this and it didn't work on first launch unfortunately */
     // return Item.of(ItemOutput.fromTag(TagKey.create(Registry.ITEM_REGISTRY, tag), 1).get()).getId();
     /* Create a copy of the mantle preferred mods list */

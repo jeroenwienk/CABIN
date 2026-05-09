@@ -3004,6 +3004,24 @@
 			x: 3.5d
 			y: 17.0d
 		}
+		{
+			can_repeat: true
+			id: "3ED9B5A885FC42A6"
+			rewards: [{
+				id: "79A18FFD321688F7"
+				item: "minecraft:rabbit_foot"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 5L
+				id: "096B81D7F95E2F9C"
+				item: { Count: 5, id: "thermal:gold_coin" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 26.0d
+		}
 	]
 	title: "{cabin.chapter.08DF8E49DAFD4F9D.title}"
 }

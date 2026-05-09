@@ -271,7 +271,24 @@ ServerEvents.recipes(event => {
     event.replaceOutput({}, "#forge:ingots/lead", "thermal:lead_ingot")
     event.replaceOutput({}, "#forge:nuggets/lead", "thermal:lead_nugget")
     event.replaceOutput({}, "#forge:storage_blocks/lead", "thermal:lead_block")
+    event.replaceOutput({}, "#forge:ingots/steel", "mekanism:ingot_steel")
+    event.replaceOutput({}, "#forge:nuggets/steel", "mekanism:nugget_steel")
+    event.replaceOutput({}, "#forge:storage_blocks/steel", "mekanism:block_steel")
+    event.replaceOutput({}, "ad_astra:steel_ingot", "mekanism:ingot_steel")
+    event.replaceOutput({}, "ad_astra:steel_nugget", "mekanism:nugget_steel")
+    event.replaceOutput({}, "ad_astra:steel_block", "mekanism:block_steel")
+    event.replaceOutput({}, "tconstruct:steel_ingot", "mekanism:ingot_steel")
+    event.replaceOutput({}, "tconstruct:steel_nugget", "mekanism:nugget_steel")
+    event.replaceOutput({}, "tconstruct:steel_block", "mekanism:block_steel")
     event.replaceOutput({ id:"occultism:crafting/silver_block"}, "#forge:storage_blocks/silver", "thermal:silver_block")
+
+    // Manual cleanup for old worlds: lets existing duplicate steel stacks be converted.
+    event.shapeless("mekanism:ingot_steel", ["ad_astra:steel_ingot"]).id("kubejs:steel_unification/ad_astra_ingot")
+    event.shapeless("mekanism:nugget_steel", ["ad_astra:steel_nugget"]).id("kubejs:steel_unification/ad_astra_nugget")
+    event.shapeless("mekanism:block_steel", ["ad_astra:steel_block"]).id("kubejs:steel_unification/ad_astra_block")
+    event.shapeless("mekanism:ingot_steel", ["tconstruct:steel_ingot"]).id("kubejs:steel_unification/tconstruct_ingot")
+    event.shapeless("mekanism:nugget_steel", ["tconstruct:steel_nugget"]).id("kubejs:steel_unification/tconstruct_nugget")
+    event.shapeless("mekanism:block_steel", ["tconstruct:steel_block"]).id("kubejs:steel_unification/tconstruct_block")
 
     // Ore processing
     event.remove({ id: /thermal:machines\/smelter\/.*dust/ })
