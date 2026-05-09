@@ -13,6 +13,20 @@ if (Platform.isLoaded("createdieselgenerators")) {
         event.remove({ id: "createdieselgenerators:compacting/plant_oil" })
         event.remove({ id: "createdieselgenerators:distillation/crude_oil" }) // Distillation outputs can"t be changed with scripts
 
+        // Lava Fermenting
+        event.remove({ id: "createdieselgenerators:bulk_fermenting/lava" })
+        event.custom({
+            "type": "createdieselgenerators:bulk_fermenting",
+            "ingredients": [
+                { "tag": "forge:cobblestone" }
+            ],
+            "heatRequirement": "heated",
+            "processingTime": 225,
+            "results": [
+                { "fluid": "minecraft:lava", "amount": 100 }
+            ]
+        }).id("createdieselgenerators:bulk_fermenting/lava")
+
         // Crude Distilation
         event.custom({
             "type": "createdieselgenerators:distillation",
